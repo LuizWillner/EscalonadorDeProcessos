@@ -23,6 +23,12 @@ def processarEntrada(arq):
         linha_split = linha.replace('\n', '')
         linha_split = linha_split.split(maxsplit=3)   # split para formar lista do processo
         linha_split[-1] = linha_split[-1].split()  # split para formar sublista de tempos de burst e de I/O
+        if len(linha_split[-1]) % 2 == 0:
+            print("####### ERRO! ######")
+            print(f"A linha de tempo de burst e I/O {linha_split} não termina com tempo de burst")
+            print("(Tamanho é inválido)")
+            print("Abortando...")
+            exit(1)
 
         # fazendo os castings adequados
         linha_split[0] = float(linha_split[0])
