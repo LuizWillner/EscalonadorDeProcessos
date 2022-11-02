@@ -92,5 +92,5 @@ def escalonadorFIFO(lista_processos, tempo):
         if len(lista_espera) != 0:
             atualiza_espera(tempo)
 
-        tempo += 1
         escreve_saida("saida/saida.out", lista_prontos, lista_espera, executando, tempo)
+        tempo += 1
