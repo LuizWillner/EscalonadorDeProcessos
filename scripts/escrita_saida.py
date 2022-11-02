@@ -1,5 +1,5 @@
 
-def escreve_saida(nome_arq, lista_prontos, lista_espera, executando, tempo):
+def escreve_saida(nome_arq, lista_prontos, lista_espera, lista_finalizados, executando, tempo):
 
     arq_saida = open(nome_arq, 'a')
     arq_saida.write(f'Tempo corrente: {tempo} segundos\n')
@@ -24,13 +24,20 @@ def escreve_saida(nome_arq, lista_prontos, lista_espera, executando, tempo):
     else:
         arq_saida.write('Não há\n')
 
+    arq_saida.write('Programas finalizados:\n')
+    if len(lista_finalizados) != 0:
+        for processo in lista_finalizados:
+            arq_saida.write(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}\n')
+    else:
+        arq_saida.write('Não há\n')
+
     arq_saida.write('\n')
     arq_saida.close()
 
     return
 
 
-def print_saida_terminal(lista_prontos, lista_espera, executando, tempo):
+def print_saida_terminal(lista_prontos, lista_espera, lista_finalizados, executando, tempo):
     print(f'>>> Tempo corrente: {tempo} segundos')
 
     print('Em execução:')
@@ -50,6 +57,13 @@ def print_saida_terminal(lista_prontos, lista_espera, executando, tempo):
     if len(lista_espera) != 0:
         for processo in lista_espera:
             print(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}, Tempo restante de I/O: {processo.burst_io[0]}')
+    else:
+        print('Não há')
+
+    print('Programas finalizados:')
+    if len(lista_finalizados) != 0:
+        for processo in lista_finalizados:
+            print(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}')
     else:
         print('Não há')
 

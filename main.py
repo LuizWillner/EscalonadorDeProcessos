@@ -5,7 +5,11 @@ from scripts.escalonador_fifo import *
 
 # //////////////////////////////// MAIN ////////////////////////////////
 
-arq_entrada = open("entrada/entrada2.in", 'r')
+print("Digite o nome do arquivo de entrada:")
+nome_arq_entrada = input(">> ")
+print()
+
+arq_entrada = open("entrada/" + nome_arq_entrada, 'r')
 arq_saida = open("saida/saida.out", 'w')
 
 arq_saida.write("")
@@ -16,4 +20,18 @@ processos = processarEntrada(arq_entrada)
 arq_entrada.close()
 
 processos = sorted(processos, key=attrgetter("tempo_admissao"))  # organiza por tempo de entrada
-escalonadorFIFO(processos, 0)
+
+
+print('Digite o numero da politica de escalonamento')
+print("[1] FCFS")
+print("[2] Round-Robin")
+politica_escalonador = int(input(">> "))
+print()
+
+if politica_escalonador == 1:
+    escalonadorFIFO(processos, 0)
+elif politica_escalonador == 2:
+    # escalonadorRR()
+    pass
+else:
+    print("Numero invalido!")
