@@ -12,7 +12,7 @@ executando = []
 
 def removerProcesso(lista_processos, processo):
     for i in range(len(lista_processos)):
-        print(lista_processos[i].nome_programa)
+        # print(lista_processos[i].nome_programa)
 
         if lista_processos[i].nome_programa == processo.nome_programa:
             lista_finalizados.append(lista_processos[i])  # adicionando processo finalizado a lista de finalizados
@@ -93,4 +93,5 @@ def escalonadorFIFO(lista_processos, tempo):
             atualiza_espera(tempo)
 
         escreve_saida("saida/saida.out", lista_prontos, lista_espera, executando, tempo)
+        print_saida_terminal(lista_prontos, lista_espera, executando, tempo)
         tempo += 1
