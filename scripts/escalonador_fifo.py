@@ -23,15 +23,27 @@ def removerProcesso(lista_processos, processo):
 
 
 def atualiza_espera():
-    # caso o tempo de I/0 seja maior que 0
-    if lista_espera[0].burst_io[0] > 0:
-        lista_espera[0].burst_io[0] -= 1  # decrementar em 1 o valor atual
+    # Verifica se o primeiro na lista de espera acabou de entrar
+    if not lista_espera[0].novo_na_espera:
 
-    # caso o tempo de I/O seja igual a 0
-    if lista_espera[0].burst_io[0] == 0:
-        lista_espera[0].burst_io.pop(0)  # remove o tempo de I/O da lista de tempos de burst I/O
-        lista_prontos.append(lista_espera[0])
-        lista_espera.pop(0)
+        # caso o tempo de I/0 seja maior que 0
+        if lista_espera[0].burst_io[0] > 0:
+            lista_espera[0].burst_io[0] -= 1  # decrementar em 1 o valor atual
+
+        # caso o tempo de I/O seja igual a 0
+        if lista_espera[0].burst_io[0] == 0:
+            lista_espera[0].burst_io.pop(0)  # remove o tempo de I/O da lista de tempos de burst I/O
+            if len(executando) == 0:
+                # Na realidade, primeiro o processo vai pra lista de pronto e, caso não haja ninguém executando, vai em
+                # seguida para execução
+                executando.append(lista_espera[0])
+            else:
+                lista_prontos.append(lista_espera[0])
+            lista_espera.pop(0)
+
+    else:
+        lista_espera[0].novo_na_espera = False
+
     return
 
 
@@ -59,6 +71,10 @@ def atualiza_prontos(lista_processos):
                 lista_processos = removerProcesso(lista_processos, executando[0])
             else:  # existe uma solicitação de I/O
                 lista_espera.append(executando[0])
+                # Se a lista de espera antes tava vazia...
+                if len(lista_espera) == 1:
+                    # ... o processo que acabou de ser adicionado é novo e o tempo de I/O dele não vai ser atualizado nessa iteração
+                    lista_espera[0].novo_na_espera = True
 
             executando.clear()
 
@@ -70,8 +86,10 @@ def atualiza_prontos(lista_processos):
 
 
 def escalonadorFIFO(lista_processos, tempo):
+
     while len(lista_processos) != 0:
         # atualiza a fila de prontos pelo tempo de admissão
+        # TODO: dar um jeito de apagar processo da lista de processos depois da admissão
         for processo in lista_processos:
             if tempo == processo.tempo_admissao:
                 lista_prontos.append(processo)

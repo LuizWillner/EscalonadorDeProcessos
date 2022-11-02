@@ -11,13 +11,19 @@ def escreve_saida(nome_arq, lista_prontos, lista_espera, executando, tempo):
         arq_saida.write('Não há\n')
 
     arq_saida.write('Fila de Pronto:\n')
-    for processo in lista_prontos:
-        arq_saida.write(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}\n')
+    if len(lista_prontos) != 0:
+        for processo in lista_prontos:
+            arq_saida.write(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}\n')
+    else:
+        arq_saida.write('Não há\n')
 
     arq_saida.write('Fila de Espera:\n')
-    for processo in lista_espera:
-        arq_saida.write(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}, Tempo restante de I/O: {processo.burst_io[0]}\n')
-    
+    if len(lista_espera) != 0:
+        for processo in lista_espera:
+            arq_saida.write(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}, Tempo restante de I/O: {processo.burst_io[0]}\n')
+    else:
+        arq_saida.write('Não há\n')
+
     arq_saida.write('\n')
     arq_saida.close()
 
@@ -34,12 +40,18 @@ def print_saida_terminal(lista_prontos, lista_espera, executando, tempo):
         print('Não há')
 
     print('Fila de Pronto:')
-    for processo in lista_prontos:
-        print(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}')
+    if len(lista_prontos) != 0:
+        for processo in lista_prontos:
+            print(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}')
+    else:
+        print('Não há')
 
     print('Fila de Espera:')
-    for processo in lista_espera:
-        print(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}, Tempo restante de I/O: {processo.burst_io[0]}')
+    if len(lista_espera) != 0:
+        for processo in lista_espera:
+            print(f'PID: , Nome: {processo.nome_programa}, Prioridade: {processo.prioridade}, Tempo restante de I/O: {processo.burst_io[0]}')
+    else:
+        print('Não há')
 
     print()
 
