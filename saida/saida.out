@@ -1,249 +1,211 @@
 Tempo corrente: 0 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 3.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 3.0
 Fila de Pronto:
 PID: , Nome: PROG02, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 1 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 2.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
 PID: , Nome: PROG02, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 2 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 1.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
 PID: , Nome: PROG02, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 3 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 0.0
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-PID: , Nome: PROG02, Prioridade: 1
 Fila de Espera:
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 1.0
 
 Tempo corrente: 4 segundos
 Em execução:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 2.0
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
+PID: , Nome: PROG01, Prioridade: 1
 Fila de Espera:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 1.0
 
 Tempo corrente: 5 segundos
 Em execução:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 1.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 3.0
 Fila de Pronto:
-PID: , Nome: PROG01, Prioridade: 1
 Fila de Espera:
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 5.0
 
 Tempo corrente: 6 segundos
 Em execução:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 0.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-PID: , Nome: PROG01, Prioridade: 1
 PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 4.0
 
 Tempo corrente: 7 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 3.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
 PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 5.0
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 3.0
 
 Tempo corrente: 8 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 2.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
-PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 4.0
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 2.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 2.0
 
 Tempo corrente: 9 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 1.0
+Não há
 Fila de Pronto:
-PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 3.0
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 1.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 2.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 
 Tempo corrente: 10 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 0.0
-Fila de Pronto:
-PID: , Nome: PROG03, Prioridade: 1
-Fila de Espera:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 2.0
-
-Tempo corrente: 11 segundos
-Em execução:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 1.0
-Fila de Pronto:
-Fila de Espera:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 1.0
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 2.0
-
-Tempo corrente: 12 segundos
-Em execução:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 0.0
+Não há
 Fila de Pronto:
 PID: , Nome: PROG02, Prioridade: 1
 Fila de Espera:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 2.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 2.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
+
+Tempo corrente: 11 segundos
+Em execução:
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 3.0
+Fila de Pronto:
+Fila de Espera:
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 1.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
+
+Tempo corrente: 12 segundos
+Em execução:
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 2.0
+Fila de Pronto:
+PID: , Nome: PROG01, Prioridade: 1
+Fila de Espera:
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 
 Tempo corrente: 13 segundos
 Em execução:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 3.0
+PID: , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
+PID: , Nome: PROG01, Prioridade: 1
 Fila de Espera:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 1.0
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 2.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 1.0
 
 Tempo corrente: 14 segundos
 Em execução:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 2.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-PID: , Nome: PROG01, Prioridade: 1
+PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 2.0
 
 Tempo corrente: 15 segundos
 Em execução:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 1.0
+PID: , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
-PID: , Nome: PROG01, Prioridade: 1
+PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 1.0
 
 Tempo corrente: 16 segundos
 Em execução:
-PID: , Nome: PROG02, Prioridade: 1, Tempo restante: 0.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 4.0
 Fila de Pronto:
-PID: , Nome: PROG01, Prioridade: 1
-PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 17 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 2.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 3.0
 Fila de Pronto:
-PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 18 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 1.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 19 segundos
 Em execução:
-PID: , Nome: PROG01, Prioridade: 1, Tempo restante: 0.0
+PID: , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
-PID: , Nome: PROG03, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 20 segundos
 Em execução:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 4.0
+Não há
 Fila de Pronto:
 Fila de Espera:
 
 Tempo corrente: 21 segundos
 Em execução:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 3.0
+Não há
 Fila de Pronto:
 Fila de Espera:
 
 Tempo corrente: 22 segundos
 Em execução:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 2.0
+PID: , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-PID: , Nome: PROG04, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 23 segundos
 Em execução:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 1.0
+PID: , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
-PID: , Nome: PROG04, Prioridade: 1
 Fila de Espera:
 
 Tempo corrente: 24 segundos
-Em execução:
-PID: , Nome: PROG03, Prioridade: 1, Tempo restante: 0.0
-Fila de Pronto:
-PID: , Nome: PROG04, Prioridade: 1
-Fila de Espera:
-
-Tempo corrente: 25 segundos
-Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 2.0
-Fila de Pronto:
-Fila de Espera:
-
-Tempo corrente: 26 segundos
-Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 1.0
-Fila de Pronto:
-Fila de Espera:
-
-Tempo corrente: 27 segundos
-Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 0.0
-Fila de Pronto:
-Fila de Espera:
-
-Tempo corrente: 28 segundos
 Em execução:
 Não há
 Fila de Pronto:
 PID: , Nome: PROG04, Prioridade: 1
 Fila de Espera:
 
+Tempo corrente: 25 segundos
+Em execução:
+PID: , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 5.0
+Fila de Pronto:
+Fila de Espera:
+
+Tempo corrente: 26 segundos
+Em execução:
+PID: , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 4.0
+Fila de Pronto:
+Fila de Espera:
+
+Tempo corrente: 27 segundos
+Em execução:
+PID: , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 3.0
+Fila de Pronto:
+Fila de Espera:
+
+Tempo corrente: 28 segundos
+Em execução:
+PID: , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 2.0
+Fila de Pronto:
+Fila de Espera:
+
 Tempo corrente: 29 segundos
 Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 5.0
+PID: , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
 Fila de Espera:
 
 Tempo corrente: 30 segundos
-Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 4.0
-Fila de Pronto:
-Fila de Espera:
-
-Tempo corrente: 31 segundos
-Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 3.0
-Fila de Pronto:
-Fila de Espera:
-
-Tempo corrente: 32 segundos
-Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 2.0
-Fila de Pronto:
-Fila de Espera:
-
-Tempo corrente: 33 segundos
-Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 1.0
-Fila de Pronto:
-Fila de Espera:
-
-Tempo corrente: 34 segundos
-Em execução:
-PID: , Nome: PROG04, Prioridade: 1, Tempo restante: 0.0
-Fila de Pronto:
-Fila de Espera:
-
-Tempo corrente: 35 segundos
 Em execução:
 Não há
 Fila de Pronto:

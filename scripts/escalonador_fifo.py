@@ -22,7 +22,7 @@ def removerProcesso(lista_processos, processo):
     return lista_processos
 
 
-def atualiza_espera(tempo):
+def atualiza_espera():
     # caso o tempo de I/0 seja maior que 0
     if lista_espera[0].burst_io[0] > 0:
         lista_espera[0].burst_io[0] -= 1  # decrementar em 1 o valor atual
@@ -35,7 +35,7 @@ def atualiza_espera(tempo):
     return
 
 
-def atualiza_prontos(lista_processos, tempo):
+def atualiza_prontos(lista_processos):
     # verifica se acabou a lista de tempos de burst e I/O
     if len(executando[0].burst_io) == 0:
         lista_processos = removerProcesso(lista_processos, executando[0])  # remove o processo da lista de processos
@@ -50,15 +50,13 @@ def atualiza_prontos(lista_processos, tempo):
             executando[0].burst_io[0] -= 1  # decrementar em 1 o valor atual
 
         # caso o tempo de burst seja igual a 0
-        elif executando[0].burst_io[0] == 0:
+        if executando[0].burst_io[0] == 0:
 
             executando[0].burst_io.pop(0)  # remove o tempo de burst da lista de tempos de burst I/O
-            # lista_processos = removerProcesso(lista_processos, executando[0])  TODO: PROVISÓRIO
 
             # acabaram os tempos na lista de burst_io
             if len(executando[0].burst_io) == 0:
-                lista_processos = removerProcesso(lista_processos, executando[0])  # TODO: PROVISÓRIO
-
+                lista_processos = removerProcesso(lista_processos, executando[0])
             else:  # existe uma solicitação de I/O
                 lista_espera.append(executando[0])
 
@@ -80,17 +78,17 @@ def escalonadorFIFO(lista_processos, tempo):
 
         # Confere se existe algum processo em execução
         # 1) caso não exista
-        if len(executando) == 0:
+        if len(executando) == 0:  # TODO: botar and
             if len(lista_prontos) != 0:
                 executando.append(lista_prontos[0])  # move o primeiro processo na fila de prontos para e execução
                 lista_prontos.pop(0)
 
         # 2) caso exista
         else:
-            lista_processos = atualiza_prontos(lista_processos, tempo)
+            lista_processos = atualiza_prontos(lista_processos)
 
         if len(lista_espera) != 0:
-            atualiza_espera(tempo)
+            atualiza_espera()
 
         escreve_saida("saida/saida.out", lista_prontos, lista_espera, executando, tempo)
         print_saida_terminal(lista_prontos, lista_espera, executando, tempo)
