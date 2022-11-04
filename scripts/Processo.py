@@ -7,6 +7,7 @@ class Processo:
         self.prioridade = prioridade
         self.burst_io = burst_io
         self.novo_na_espera = False
+        self.pid = -1
 
     def print(self):
         print(f'{self.tempo_admissao:.2f}', end='\t')

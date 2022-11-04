@@ -2,6 +2,7 @@
 
 from scripts.leitor_entrada import *
 from scripts.escalonador_fifo import *
+from scripts.gerador_pid import *
 
 # //////////////////////////////// MAIN ////////////////////////////////
 
@@ -23,6 +24,7 @@ arq_entrada.close()
 
 processos = sorted(processos, key=attrgetter("tempo_admissao"))  # organiza por tempo de entrada
 
+gerarPID(processos) # Atribuição dos PIDS
 
 print('Digite o numero da politica de escalonamento')
 print("[1] FCFS")
