@@ -7,6 +7,8 @@ from scripts.escalonador_fifo import *
 
 print("Digite o nome do arquivo de entrada:")
 nome_arq_entrada = input(">> ")
+# nome_arq_entrada = 'entrada3.in'
+# print(nome_arq_entrada)
 print()
 
 arq_entrada = open("entrada/" + nome_arq_entrada, 'r')
@@ -26,6 +28,8 @@ print('Digite o numero da politica de escalonamento')
 print("[1] FCFS")
 print("[2] Round-Robin")
 politica_escalonador = int(input(">> "))
+# politica_escalonador = 1
+# print(politica_escalonador)
 print()
 
 if politica_escalonador == 1:
