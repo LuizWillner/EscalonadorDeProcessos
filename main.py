@@ -37,7 +37,10 @@ print()
 if politica_escalonador == 1:
     escalonadorFIFO(processos, 0)
 elif politica_escalonador == 2:
-    # escalonadorRR()
+    print('Digite o quantum')
+    quantum = int(input(">> "))
+
+    escalonadorRR(processos, quantum, 0)
     pass
 else:
     print("Numero invalido!")
