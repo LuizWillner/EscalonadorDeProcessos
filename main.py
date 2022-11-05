@@ -3,6 +3,7 @@
 from scripts.leitor_entrada import *
 from scripts.escalonador_fifo import *
 from scripts.gerador_pid import *
+from scripts.escalonador_rr import *
 
 # //////////////////////////////// MAIN ////////////////////////////////
 

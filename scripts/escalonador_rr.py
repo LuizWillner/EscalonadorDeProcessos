@@ -1,7 +1,8 @@
 # /////////////////////////////// IMPORTS ///////////////////////////////
 from scripts.processos_geral import *
 
-def atualiza_prontosFIFO(lista_processos):
+def atualiza_prontosRR(lista_processos, quantum, tempo):
+
     # verifica se acabou a lista de tempos de burst e I/O
     if len(executando[0].burst_io) == 0:
         lista_processos = removerProcesso(lista_processos, executando[0])  # remove o processo da lista de processos
@@ -11,14 +12,31 @@ def atualiza_prontosFIFO(lista_processos):
 
     # ainda há tempos na lista burst_io
     else:
+
         # caso o tempo de burst seja maior que 0
         if executando[0].burst_io[0] > 0:
+
             executando[0].burst_io[0] -= 1  # decrementar em 1 o valor atual
+            executando[0].tempo_executado += 1  # incrementa em 1 o valor atual
+
+            # caso o tempo que o processo em execução gastou se iguale ao quantum
+            if executando[0].tempo_executado >= quantum:
+                # caso o processo não tenha terminado o tempo de CPU
+                if executando[0].burst_io[0] > 0: 
+                    # caso a fila de prontos não esteja vazia
+                    if len(lista_prontos) != 0:
+
+                        executando[0].tempo_executado = 0
+                        lista_prontos.append(executando[0]) # tira o processo atual em execução e coloca na fila de prontos
+                        executando.clear()
+                        executando.append(lista_prontos[0]) # entra o primeiro da fila de prontos para execução
+                        lista_prontos.pop(0)
 
         # caso o tempo de burst seja igual a 0
         if executando[0].burst_io[0] == 0:
 
             executando[0].burst_io.pop(0)  # remove o tempo de burst da lista de tempos de burst I/O
+            executando[0].tempo_executado = 0
 
             # acabaram os tempos na lista de burst_io
             if len(executando[0].burst_io) == 0:
@@ -39,22 +57,20 @@ def atualiza_prontosFIFO(lista_processos):
     return lista_processos
 
 
-def escalonadorFIFO(lista_processos, tempo):
+def escalonadorRR(lista_processos, quantum, tempo):
 
-    while len(lista_processos) != 0:
-
+    while(len(lista_processos) != 0):
+        
         recebe_processo(lista_processos, tempo)
-        # Confere se existe algum processo em execução
-        # 1) caso não exista
+
         if len(executando) == 0:
             if len(lista_prontos) != 0:
                 executando.append(lista_prontos[0])  # move o primeiro processo na fila de prontos para e execução
                 lista_prontos.pop(0)
 
-        # 2) caso exista
         else:
-            lista_processos = atualiza_prontosFIFO(lista_processos)
-
+            lista_processos = atualiza_prontosRR(lista_processos, quantum, tempo)
+        
         if len(lista_espera) != 0:
             atualiza_espera()
 
