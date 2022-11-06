@@ -1,7 +1,8 @@
 # /////////////////////////////// IMPORTS ///////////////////////////////
 from scripts.processos_geral import *
 
-def atualiza_prontosRR(lista_processos, quantum, tempo):
+
+def atualiza_prontosRR(lista_processos, quantum):
 
     # verifica se acabou a lista de tempos de burst e I/O
     if len(executando[0].burst_io) == 0:
@@ -27,9 +28,9 @@ def atualiza_prontosRR(lista_processos, quantum, tempo):
                     if len(lista_prontos) != 0:
 
                         executando[0].tempo_executado = 0
-                        lista_prontos.append(executando[0]) # tira o processo atual em execução e coloca na fila de prontos
+                        lista_prontos.append(executando[0])  # tira o processo atual em execução e coloca na fila de prontos
                         executando.clear()
-                        executando.append(lista_prontos[0]) # entra o primeiro da fila de prontos para execução
+                        executando.append(lista_prontos[0])  # entra o primeiro da fila de prontos para execução
                         lista_prontos.pop(0)
 
         # caso o tempo de burst seja igual a 0
@@ -59,9 +60,9 @@ def atualiza_prontosRR(lista_processos, quantum, tempo):
 
 def escalonadorRR(lista_processos, quantum, tempo):
 
-    while(len(lista_processos) != 0):
+    while len(lista_processos) != 0:
         
-        recebe_processo(lista_processos, tempo)
+        recebeProcesso(lista_processos, tempo)
 
         if len(executando) == 0:
             if len(lista_prontos) != 0:
@@ -69,7 +70,7 @@ def escalonadorRR(lista_processos, quantum, tempo):
                 lista_prontos.pop(0)
 
         else:
-            lista_processos = atualiza_prontosRR(lista_processos, quantum, tempo)
+            lista_processos = atualiza_prontosRR(lista_processos, quantum)
         
         if len(lista_espera) != 0:
             atualiza_espera()

@@ -1,6 +1,7 @@
 # /////////////////////////////// IMPORTS ///////////////////////////////
 from scripts.processos_geral import *
 
+
 def atualiza_prontosFIFO(lista_processos):
     # verifica se acabou a lista de tempos de burst e I/O
     if len(executando[0].burst_io) == 0:
@@ -43,7 +44,7 @@ def escalonadorFIFO(lista_processos, tempo):
 
     while len(lista_processos) != 0:
 
-        recebe_processo(lista_processos, tempo)
+        recebeProcesso(lista_processos, tempo)
         # Confere se existe algum processo em execução
         # 1) caso não exista
         if len(executando) == 0:

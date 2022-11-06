@@ -4,7 +4,7 @@ from scripts.Processo import *
 # ////////////////////////////// FUNCTIONS //////////////////////////////
 
 def processarEntrada(arq):
-    # Matriz para armazenar todas as listas-processos
+    # Lista para armazenar todas os objetos da classe Processo
     all_processos = []
 
     # Percorrer linhas do arquivo

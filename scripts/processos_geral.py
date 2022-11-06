@@ -2,6 +2,7 @@
 from operator import itemgetter, attrgetter
 from scripts.escrita_saida import *
 
+
 # Variáveis globais
 lista_prontos = []
 lista_espera = []
@@ -9,7 +10,7 @@ lista_finalizados = []
 executando = []
 
 
-def recebe_processo(lista_processos, tempo):
+def recebeProcesso(lista_processos, tempo):
     # atualiza a fila de prontos pelo tempo de admissão
     # TODO: dar um jeito de apagar processo da lista de processos depois da admissão
     for processo in lista_processos:
@@ -47,7 +48,7 @@ def atualiza_espera():
             else:  # se tem alguém executando na CPU...
                 # if executando[0].
                 lista_prontos.append(executando[0])  # ... interrupção gerada tira o processo da CPU e coloca na fila de pronto
-               # executando[0].tempo_executado = 0 #Controle apenas para o caso de escalonamento RR
+                # executando[0].tempo_executado = 0 #Controle apenas para o caso de escalonamento RR
                 executando.clear()  # (Na realidade, o SO assume o controle da CPU)
                 lista_prontos.append(lista_espera[0])  # ... o processo que gerou a interrupção vai pra fila de pronto
                 executando.append(lista_prontos[0])  # ... o primeiro da fila de pronto entra em execução
@@ -59,4 +60,3 @@ def atualiza_espera():
         lista_espera[0].novo_na_espera = False
 
     return
-
