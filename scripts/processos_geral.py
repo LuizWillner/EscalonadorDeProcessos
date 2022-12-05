@@ -44,11 +44,11 @@ def atualiza_espera():
             if len(executando) == 0:  # se não há ninguém executando na CPU...
                 # Na realidade, primeiro o processo vai pra lista de pronto e, caso não haja ninguém executando, vai em
                 # seguida para execução
-                executando.append(lista_espera[0])
+                lista_prontos.append(lista_espera[0])
             else:  # se tem alguém executando na CPU...
-                # if executando[0].
+                # if executando[0].              
                 lista_prontos.append(executando[0])  # ... interrupção gerada tira o processo da CPU e coloca na fila de pronto
-                # executando[0].tempo_executado = 0 #Controle apenas para o caso de escalonamento RR
+                executando[0].tempo_executado = 0 #Controle apenas para o caso de escalonamento RR
                 executando.clear()  # (Na realidade, o SO assume o controle da CPU)
                 lista_prontos.append(lista_espera[0])  # ... o processo que gerou a interrupção vai pra fila de pronto
                 executando.append(lista_prontos[0])  # ... o primeiro da fila de pronto entra em execução

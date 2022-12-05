@@ -42,7 +42,7 @@ def print_saida_terminal(lista_prontos, lista_espera, lista_finalizados, executa
 
     print('Em execução:')
     if len(executando) != 0:
-        print(f'PID: {executando[0].pid} , Nome: {executando[0].nome_programa}, Prioridade: {executando[0].prioridade}, Tempo restante de execução: {executando[0].burst_io[0]}, TExecutado: {executando[0].tempo_executado}')
+        print(f'PID: {executando[0].pid} , Nome: {executando[0].nome_programa}, Prioridade: {executando[0].prioridade}, Tempo restante de execução: {executando[0].burst_io[0]}')
     else:
         print('Não há')
 

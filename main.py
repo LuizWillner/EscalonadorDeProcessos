@@ -23,7 +23,7 @@ processos = processarEntrada(arq_entrada)
 # processos[0].print()
 arq_entrada.close()
 
-processos = sorted(processos, key=attrgetter("tempo_admissao"))  # organiza por tempo de entrada
+processos = sorted(processos, key=attrgetter("tempo_admissao"))  # orgaeniza por tempo de entrada
 
 gerarPID(processos)  # Atribuição dos PIDS
 

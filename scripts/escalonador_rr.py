@@ -13,7 +13,6 @@ def atualiza_prontosRR(lista_processos, quantum):
 
     # ainda há tempos na lista burst_io
     else:
-
         # caso o tempo de burst seja maior que 0
         if executando[0].burst_io[0] > 0:
 
@@ -21,20 +20,17 @@ def atualiza_prontosRR(lista_processos, quantum):
             executando[0].tempo_executado += 1  # incrementa em 1 o valor atual
 
             # caso o tempo que o processo em execução gastou se iguale ao quantum
-            if executando[0].tempo_executado >= quantum:
+            if executando[0].tempo_executado == quantum:
+                executando[0].tempo_executado = 0
                 # caso o processo não tenha terminado o tempo de CPU
-                if executando[0].burst_io[0] > 0: 
-                    # caso a fila de prontos não esteja vazia
-                    if len(lista_prontos) != 0:
-
-                        executando[0].tempo_executado = 0
-                        lista_prontos.append(executando[0])  # tira o processo atual em execução e coloca na fila de prontos
-                        executando.clear()
-                        executando.append(lista_prontos[0])  # entra o primeiro da fila de prontos para execução
-                        lista_prontos.pop(0)
+                if executando[0].burst_io[0] > 0:        
+                    lista_prontos.append(executando[0])  # tira o processo atual em execução e coloca na fila de prontos
+                    executando.clear()
+                    return lista_processos
 
         # caso o tempo de burst seja igual a 0
-        if executando[0].burst_io[0] == 0:
+    
+        if executando[0].burst_io[0] == 0 :
 
             executando[0].burst_io.pop(0)  # remove o tempo de burst da lista de tempos de burst I/O
             executando[0].tempo_executado = 0
@@ -74,6 +70,10 @@ def escalonadorRR(lista_processos, quantum, tempo):
         
         if len(lista_espera) != 0:
             atualiza_espera()
+
+        if len(executando) == 0 and len(lista_prontos) != 0:
+            executando.append(lista_prontos[0])
+            lista_prontos.pop(0)
 
         escreve_saida("saida/saida.out", lista_prontos, lista_espera, lista_finalizados, executando, tempo)
         print_saida_terminal(lista_prontos, lista_espera, lista_finalizados, executando, tempo)

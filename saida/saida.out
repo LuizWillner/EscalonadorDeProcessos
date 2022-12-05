@@ -1,6 +1,6 @@
 Tempo corrente: 0 segundos
 Em execução:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 6.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 3.0
 Fila de Pronto:
 PID: 0 , Nome: PROG02, Prioridade: 1
 Fila de Espera:
@@ -10,10 +10,9 @@ Não há
 
 Tempo corrente: 1 segundos
 Em execução:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 5.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
 PID: 0 , Nome: PROG02, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
 Fila de Espera:
 Não há
 Programas finalizados:
@@ -21,9 +20,8 @@ Não há
 
 Tempo corrente: 2 segundos
 Em execução:
-PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 7.0
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-PID: 1 , Nome: PROG03, Prioridade: 1
 PID: 2 , Nome: PROG01, Prioridade: 1
 Fila de Espera:
 Não há
@@ -32,9 +30,8 @@ Não há
 
 Tempo corrente: 3 segundos
 Em execução:
-PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 6.0
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
-PID: 1 , Nome: PROG03, Prioridade: 1
 PID: 2 , Nome: PROG01, Prioridade: 1
 Fila de Espera:
 Não há
@@ -43,133 +40,191 @@ Não há
 
 Tempo corrente: 4 segundos
 Em execução:
-PID: 1 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 1.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
-PID: 2 , Nome: PROG01, Prioridade: 1
-PID: 0 , Nome: PROG02, Prioridade: 1
-Fila de Espera:
 Não há
+Fila de Espera:
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 6.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 5 segundos
 Em execução:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 4.0
+Não há
 Fila de Pronto:
-PID: 0 , Nome: PROG02, Prioridade: 1
+Não há
 Fila de Espera:
-PID: 1 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 1.0
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 5.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 3.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 6 segundos
 Em execução:
-PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 5.0
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
-PID: 2 , Nome: PROG01, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
-Fila de Espera:
 Não há
+Fila de Espera:
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 4.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 3.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 7 segundos
 Em execução:
-PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 4.0
-Fila de Pronto:
-PID: 2 , Nome: PROG01, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
-Fila de Espera:
 Não há
+Fila de Pronto:
+Não há
+Fila de Espera:
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 3.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 3.0
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 8 segundos
 Em execução:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 3.0
-Fila de Pronto:
-PID: 1 , Nome: PROG03, Prioridade: 1
-PID: 0 , Nome: PROG02, Prioridade: 1
-Fila de Espera:
 Não há
+Fila de Pronto:
+Não há
+Fila de Espera:
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 2.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 3.0
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 9 segundos
 Em execução:
-PID: 1 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 1.0
-Fila de Pronto:
-PID: 0 , Nome: PROG02, Prioridade: 1
-PID: 2 , Nome: PROG01, Prioridade: 1
-Fila de Espera:
 Não há
+Fila de Pronto:
+Não há
+Fila de Espera:
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de I/O: 1.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 3.0
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 10 segundos
 Em execução:
-PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 3.0
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 6.0
 Fila de Pronto:
-PID: 2 , Nome: PROG01, Prioridade: 1
+Não há
 Fila de Espera:
-PID: 1 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 3.0
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 11 segundos
 Em execução:
-PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 2.0
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 5.0
 Fila de Pronto:
-PID: 2 , Nome: PROG01, Prioridade: 1
+Não há
 Fila de Espera:
-PID: 1 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 1.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 2.0
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 12 segundos
 Em execução:
-PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 1.0
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 4.0
 Fila de Pronto:
-PID: 2 , Nome: PROG01, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
-Fila de Espera:
 Não há
+Fila de Espera:
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 1.0
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 Programas finalizados:
 Não há
 
 Tempo corrente: 13 segundos
 Em execução:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 2.0
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 3.0
 Fila de Pronto:
-PID: 1 , Nome: PROG03, Prioridade: 1
+PID: 2 , Nome: PROG01, Prioridade: 1
 Fila de Espera:
-Não há
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
 Programas finalizados:
-PID: 0 , Nome: PROG02, Prioridade: 1
+Não há
 
 Tempo corrente: 14 segundos
 Em execução:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 1.0
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-PID: 1 , Nome: PROG03, Prioridade: 1
+PID: 2 , Nome: PROG01, Prioridade: 1
 Fila de Espera:
-Não há
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 1.0
 Programas finalizados:
-PID: 0 , Nome: PROG02, Prioridade: 1
+Não há
 
 Tempo corrente: 15 segundos
 Em execução:
-PID: 1 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 2.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 3.0
 Fila de Pronto:
-Não há
-Fila de Espera:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 3.0
-Programas finalizados:
 PID: 0 , Nome: PROG02, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
+Fila de Espera:
+Não há
+Programas finalizados:
+Não há
 
 Tempo corrente: 16 segundos
 Em execução:
-PID: 1 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 1.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 2.0
+Fila de Pronto:
+PID: 0 , Nome: PROG02, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
+Fila de Espera:
+Não há
+Programas finalizados:
+Não há
+
+Tempo corrente: 17 segundos
+Em execução:
+PID: 0 , Nome: PROG02, Prioridade: 1, Tempo restante de execução: 1.0
+Fila de Pronto:
+PID: 3 , Nome: PROG03, Prioridade: 1
+PID: 2 , Nome: PROG01, Prioridade: 1
+Fila de Espera:
+Não há
+Programas finalizados:
+Não há
+
+Tempo corrente: 18 segundos
+Em execução:
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 4.0
+Fila de Pronto:
+PID: 2 , Nome: PROG01, Prioridade: 1
+Fila de Espera:
+Não há
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 19 segundos
+Em execução:
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 3.0
+Fila de Pronto:
+PID: 2 , Nome: PROG01, Prioridade: 1
+Fila de Espera:
+Não há
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 20 segundos
+Em execução:
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 1.0
+Fila de Pronto:
+PID: 3 , Nome: PROG03, Prioridade: 1
+Fila de Espera:
+Não há
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 21 segundos
+Em execução:
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
 Não há
 Fila de Espera:
@@ -177,62 +232,136 @@ PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 2.0
 Programas finalizados:
 PID: 0 , Nome: PROG02, Prioridade: 1
 
-Tempo corrente: 17 segundos
+Tempo corrente: 22 segundos
 Em execução:
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 1.0
+Fila de Pronto:
+PID: 1 , Nome: PROG04, Prioridade: 1
+Fila de Espera:
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 1.0
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 23 segundos
+Em execução:
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 2.0
+Fila de Pronto:
+PID: 2 , Nome: PROG01, Prioridade: 1
+Fila de Espera:
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 3.0
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 24 segundos
+Em execução:
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 1.0
+Fila de Pronto:
+PID: 2 , Nome: PROG01, Prioridade: 1
+Fila de Espera:
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 2.0
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 25 segundos
+Em execução:
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 2.0
+Fila de Pronto:
 Não há
+Fila de Espera:
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de I/O: 1.0
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de I/O: 2.0
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 26 segundos
+Em execução:
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 1.0
+Fila de Pronto:
+PID: 3 , Nome: PROG03, Prioridade: 1
+Fila de Espera:
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de I/O: 2.0
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 27 segundos
+Em execução:
+PID: 3 , Nome: PROG03, Prioridade: 1, Tempo restante de execução: 1.0
+Fila de Pronto:
+Não há
+Fila de Espera:
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de I/O: 1.0
+PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 1.0
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+
+Tempo corrente: 28 segundos
+Em execução:
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 4.0
 Fila de Pronto:
 Não há
 Fila de Espera:
 PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de I/O: 1.0
 Programas finalizados:
 PID: 0 , Nome: PROG02, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
 
-Tempo corrente: 18 segundos
+Tempo corrente: 29 segundos
 Em execução:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 4.0
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 3.0
 Fila de Pronto:
-Não há
+PID: 2 , Nome: PROG01, Prioridade: 1
 Fila de Espera:
 Não há
 Programas finalizados:
 PID: 0 , Nome: PROG02, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
 
-Tempo corrente: 19 segundos
+Tempo corrente: 30 segundos
 Em execução:
-PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 3.0
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-Não há
+PID: 2 , Nome: PROG01, Prioridade: 1
 Fila de Espera:
 Não há
 Programas finalizados:
 PID: 0 , Nome: PROG02, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
 
-Tempo corrente: 20 segundos
+Tempo corrente: 31 segundos
 Em execução:
 PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 2.0
 Fila de Pronto:
-Não há
+PID: 1 , Nome: PROG04, Prioridade: 1
 Fila de Espera:
 Não há
 Programas finalizados:
 PID: 0 , Nome: PROG02, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
 
-Tempo corrente: 21 segundos
+Tempo corrente: 32 segundos
 Em execução:
 PID: 2 , Nome: PROG01, Prioridade: 1, Tempo restante de execução: 1.0
 Fila de Pronto:
+PID: 1 , Nome: PROG04, Prioridade: 1
+Fila de Espera:
+Não há
+Programas finalizados:
+PID: 0 , Nome: PROG02, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
+
+Tempo corrente: 33 segundos
+Em execução:
+PID: 1 , Nome: PROG04, Prioridade: 1, Tempo restante de execução: 1.0
+Fila de Pronto:
 Não há
 Fila de Espera:
 Não há
 Programas finalizados:
 PID: 0 , Nome: PROG02, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
+PID: 2 , Nome: PROG01, Prioridade: 1
 
-Tempo corrente: 22 segundos
+Tempo corrente: 34 segundos
 Em execução:
 Não há
 Fila de Pronto:
@@ -241,6 +370,7 @@ Fila de Espera:
 Não há
 Programas finalizados:
 PID: 0 , Nome: PROG02, Prioridade: 1
-PID: 1 , Nome: PROG03, Prioridade: 1
+PID: 3 , Nome: PROG03, Prioridade: 1
 PID: 2 , Nome: PROG01, Prioridade: 1
+PID: 1 , Nome: PROG04, Prioridade: 1
 
